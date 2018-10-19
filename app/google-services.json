@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "908795790813",
+    "firebase_url": "https://hulkcash-1efc3.firebaseio.com",
+    "project_id": "hulkcash-1efc3",
+    "storage_bucket": "hulkcash-1efc3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908795790813:android:f1996766895a4526",
+        "android_client_info": {
+          "package_name": "com.innocrutrs.restaurant_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908795790813-k4lpqeha9rl5e3kgp2j4sk9l0u7q5hq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB91C4RNgTb7aPg-TTDG-zx5OJk7Y5eOCM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908795790813:android:3016388a1158ec04",
+        "android_client_info": {
+          "package_name": "com.innocruts.hulkcash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908795790813-k4lpqeha9rl5e3kgp2j4sk9l0u7q5hq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB91C4RNgTb7aPg-TTDG-zx5OJk7Y5eOCM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908795790813:android:d1bdb36e781ae31c",
+        "android_client_info": {
+          "package_name": "com.innocruts.videarn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908795790813-k4lpqeha9rl5e3kgp2j4sk9l0u7q5hq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB91C4RNgTb7aPg-TTDG-zx5OJk7Y5eOCM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908795790813:android:89d4ff3a40cee4cc",
+        "android_client_info": {
+          "package_name": "com.ryan.innocruts_primespin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908795790813-k4lpqeha9rl5e3kgp2j4sk9l0u7q5hq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB91C4RNgTb7aPg-TTDG-zx5OJk7Y5eOCM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

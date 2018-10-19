@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#383737"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/innerlayout"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:id="@+id/Relative_1"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/search_bg"
+                    android:id="@+id/bg"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@+id/cardv"
+                    android:gravity="center"
+                   android:layout_marginBottom="20dp"
+                    android:text="Find Your Favourite Restaurants\nNear You"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="1dp"
+                    android:layout_marginRight="30dp">
+
+                    <TextView
+                        android:id="@+id/autoCompleteTextView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="#fff"
+                        android:onClick="GetAllRestaurant"
+                        android:gravity="center_vertical"
+                        android:drawableRight="@android:drawable/ic_menu_search"
+                        android:dropDownSelector="#000"
+                        android:hint="Search"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:textColor="#000"
+                        android:textSize="13dp" />
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear_1"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/Relative_1"
+                android:orientation="horizontal"
+                android:weightSum="4.0">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:layout_weight="1.0"
+                    android:onClick="FastFood"
+                    android:background="#fff">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:padding="8dp"
+                        android:src="@drawable/sandwich" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="4dp"
+                        android:text="Fast Food"
+                        android:textColor="#000"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:layout_weight="1.0"
+                    android:onClick="Coffee"
+                    android:background="#fff">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:padding="8dp"
+                        android:src="@drawable/coffee" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="4dp"
+                        android:text="Coffee"
+                        android:textColor="#000"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:layout_weight="1.0"
+                    android:onClick="NonVeg"
+                    android:background="#fff">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:padding="8dp"
+                        android:src="@drawable/steak" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="4dp"
+                        android:text="Non Veg"
+                        android:textColor="#000"
+
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:layout_weight="1.0"
+                    android:onClick="Pizza"
+                    android:background="#fff">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:padding="8dp"
+                        android:src="@drawable/pizza" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="4dp"
+                        android:text="Pizza"
+                        android:textColor="#000"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+         <LinearLayout
+                android:id="@+id/Linear_2"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/Linear_1"
+                android:orientation="horizontal"
+
+                android:weightSum="4.0">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:layout_weight="1.0"
+                    android:onClick="Chinese"
+                    android:background="#fff">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:padding="8dp"
+                        android:src="@drawable/noodles" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="4dp"
+                        android:text="Chinese"
+                        android:textColor="#000"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:layout_weight="1.0"
+                    android:onClick="Veg"
+                    android:background="#fff">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:padding="8dp"
+                        android:src="@drawable/salad" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="4dp"
+                        android:text="Veg"
+                        android:textColor="#000"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:layout_weight="1.0"
+                    android:onClick="Barbeque"
+                    android:background="#fff">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:padding="8dp"
+                        android:src="@drawable/barbecue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="4dp"
+                        android:text="Barbeque"
+                        android:textColor="#000"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_margin="0.5dp"
+                 android:layout_weight="1.0"
+                 android:onClick="Events"
+                 android:background="#fff">
+
+                 <ImageView
+                     android:layout_width="match_parent"
+                     android:layout_height="70dp"
+                     android:padding="8dp"
+                     android:src="@drawable/confetti" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentBottom="true"
+                     android:layout_centerHorizontal="true"
+                     android:layout_marginBottom="4dp"
+                     android:text="Events"
+                     android:textColor="#000"
+                     android:textSize="13dp" />
+             </RelativeLayout>
+            </LinearLayout>
+
+            <!--<technolifestyle.com.imageslider.FlipperLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/flipper_layout"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/Linear_2"
+                android:background="#000"
+                android:layout_height="180dp"/>-->
+            <ss.com.bannerslider.Slider
+                android:id="@+id/Slider"
+                android:layout_below="@+id/Linear_2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@id/Slider"
+                android:background="@drawable/food_bg_n"
+                android:scaleType="centerCrop"/>
+          <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Slider"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="17dp"
+                android:textColor="#fff"
+                android:id="@+id/Text_4"
+                android:text="Popular in Your Area"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Slider"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="17dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#fff"
+                android:id="@+id/Text_5"
+                android:onClick="GetAllRestaurant"
+                android:text="More"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:id="@+id/recycler_view"
+                android:layout_below="@+id/Text_4"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Adcrtuts_Banner"
+                android:onClick="AdClick"
+
+                android:layout_below="@+id/recycler_view"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

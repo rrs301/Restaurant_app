@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#305571"
+
+    tools:context=".SignupForm">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Signup"
+        android:id="@+id/Text_1"
+        android:textColor="#fff"
+        android:textSize="30dp"
+
+        app:fontFamily="sans-serif-smallcaps" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Who you are?"
+            android:layout_below="@+id/Text_1"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/Text_2"
+            android:layout_marginTop="20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/Text_2"
+            android:id="@+id/Lin_1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/boy"
+                android:onClick="SelectMale"
+                android:id="@+id/male"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/girl"
+                android:id="@+id/female"
+                android:onClick="SelectFemale"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Select Gender"
+            android:layout_below="@+id/Lin_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#b0ffffff"
+            android:id="@+id/Text_3"
+        />
+
+
+        <EditText
+            android:hint="Name"
+            android:id="@+id/Name"
+            android:textColor="#fff"
+            android:layout_below="@+id/Text_3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColorHint="#76ffffff"
+            android:background="@drawable/edit_text"/>
+        <Spinner
+            android:id="@+id/spinner_1"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/Name"
+            android:layout_height="43dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:background="@drawable/edit_text"/>
+      <!--  <Spinner
+            android:id="@+id/spinner_2"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/spinner_1"
+            android:layout_height="43dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+
+            android:background="@drawable/edit_text"/>-->
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="SubmutBtn"
+            android:textColor="#fff"
+            android:background="@drawable/pink_button"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

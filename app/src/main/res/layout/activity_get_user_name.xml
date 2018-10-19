@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".GetUserName">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/food_bg"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BookInn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"
+        android:textColor="#fffefe"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/applogo"
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:textSize="16dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:padding="8dp"
+        android:textColor="#fff"
+        android:id="@+id/username"
+        android:layout_below="@+id/logo"
+        android:textColorHint="#aeffffff"
+        android:background="@drawable/edit_text"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:textColor="#fff"
+        android:onClick="NextBtn"
+        android:background="@color/colorAccent"
+        android:text="Next"/>
+
+
+
+</RelativeLayout>

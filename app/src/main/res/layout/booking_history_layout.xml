@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="6dp"
+            android:orientation="horizontal">
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+
+
+            android:layout_marginTop="7dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel name"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:id="@+id/R_NameText"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. Of Seat Book"
+                android:textSize="17dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/R_NameText"
+                android:id="@+id/R_SeatBookText"
+                android:textColor="#ea850a"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seat Booking Time"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/R_SeatBookText"
+                android:id="@+id/R_BookTimeText"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#0697bf"
+                android:layout_below="@+id/R_BookTimeText"
+                android:id="@+id/R_StatusText"
+                />
+        </RelativeLayout>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+
+                android:layout_weight="0.8"
+                android:layout_margin="7dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hotel name"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:id="@+id/R_Name"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/R_SeatBook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/R_Name"
+                    android:layout_marginTop="5dp"
+                    android:text="No. Of Seat Book"
+                    android:textColor="#ea850a"
+                    android:textSize="17dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seat Booking Time"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/R_SeatBook"
+                    android:id="@+id/R_BookTime"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#0697bf"
+                    android:layout_below="@+id/R_BookTime"
+                    android:id="@+id/R_Status"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

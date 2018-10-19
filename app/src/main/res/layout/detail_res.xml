@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <technolifestyle.com.imageslider.FlipperLayout
+        android:id="@+id/flipper_layout"
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="200dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/flipper_layout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="#fff"
+
+
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:id="@+id/res_title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="#b7ffffff"
+            android:layout_below="@+id/res_title"
+            android:id="@+id/Text_2"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="#b7ffffff"
+            android:layout_below="@+id/Text_2"
+            android:id="@+id/res_desc"
+            android:textSize="18dp"
+            android:layout_marginTop="1dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#fff"
+            android:id="@+id/line"
+            android:layout_below="@+id/res_desc"
+            android:layout_marginTop="5dp">
+
+        </View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="#b7ffffff"
+            android:layout_below="@+id/line"
+            android:id="@+id/Text_3"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="#b7ffffff"
+            android:layout_below="@+id/Text_3"
+            android:id="@+id/res_address"
+            android:textSize="18dp"
+            android:layout_marginTop="1dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="-5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="-5dp"
+            android:layout_below="@+id/line"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:background="#000000"
+            android:textColor="#fff"
+            android:text="Get on Map"
+            android:textSize="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#fff"
+            android:id="@+id/line_1"
+            android:layout_below="@+id/res_address"
+            android:layout_marginTop="7dp"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:textColor="#b7ffffff"
+            android:layout_below="@+id/line_1"
+            android:id="@+id/Text_4"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:textColor="#b7ffffff"
+            android:layout_below="@+id/Text_4"
+            android:id="@+id/res_contact"
+            android:textSize="18dp"
+            android:layout_marginTop="1dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="-5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="-5dp"
+            android:layout_below="@+id/line_1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:background="#000000"
+            android:textColor="#fff"
+            android:text="Call"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
